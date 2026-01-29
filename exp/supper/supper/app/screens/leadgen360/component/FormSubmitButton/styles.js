@@ -1,0 +1,81 @@
+import { StyleSheet } from 'react-native';
+import { colors } from 'configs';
+
+export const styles = StyleSheet.create({
+	view: {
+		flexDirection: 'row',
+		paddingHorizontal: 20,
+		paddingVertical: 10,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: colors.white,
+		borderTopWidth: 0.33,
+		borderTopColor: '#D8D8D8',
+		zIndex: 1,
+		shadowColor: colors.black,
+		shadowOpacity: 0.05,
+		shadowRadius: 4,
+		gap: 20,
+	},
+	createText: {
+		color: colors.white,
+		textAlign: 'center',
+	},
+	clearText: {
+		color: colors.black,
+		textAlign: 'center',
+	},
+	cancelButton: {
+		backgroundColor: colors.medium,
+		borderRadius: 10,
+	},
+	modalContainer: {
+		backgroundColor: colors.babyPowder,
+		width: '80%',
+		justifyContent: 'center',
+		// alignItems: 'center',
+		alignSelf: 'center',
+		paddingHorizontal: 30,
+		paddingVertical: 30,
+		borderRadius: 20,
+		shadowColor: '#000',
+		shadowOffset: {
+			width: 0,
+			height: 2,
+		},
+		shadowOpacity: 0.25,
+		shadowRadius: 3.84,
+		elevation: 5,
+	},
+	modalText: {
+		fontSize: 14,
+		marginTop: 10,
+		marginBottom: '5%',
+	},
+	confirmButton: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		height: 40,
+		width: 100,
+		// width: '80%',
+		backgroundColor: colors.primary,
+		borderRadius: 10,
+		marginTop: '5%',
+	},
+	backButton: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		height: 40,
+		width: 80,
+		// width: '80%',
+		backgroundColor: colors.white,
+		borderColor: colors.secondaryFont,
+		borderWidth: 1,
+		borderRadius: 10,
+		marginTop: '5%',
+	},
+	modalButtonText: {
+		fontSize: 14,
+		color: colors.white,
+	},
+});
